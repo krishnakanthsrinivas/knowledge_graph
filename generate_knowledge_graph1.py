@@ -13,7 +13,7 @@ import asyncio
 load_dotenv()
 
 # Get GROQ API key
-groq_api_key = st.secrets("GROQ_API_KEY")
+groq_api_key = st.secrets["GROQ_API_KEY"]
 
 # Initialize FREE LLM (Llama-3-70B or 8B)
 llm = ChatGroq(
