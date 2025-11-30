@@ -2,6 +2,7 @@ from langchain_experimental.graph_transformers import LLMGraphTransformer
 from langchain_core.documents import Document
 from langchain_groq import ChatGroq
 from pyvis.network import Network
+import streamlit as st
 
 from dotenv import load_dotenv
 import os
@@ -12,7 +13,7 @@ import asyncio
 load_dotenv()
 
 # Get GROQ API key
-groq_api_key = os.getenv("GROQ_API_KEY")
+groq_api_key = st.secrets("GROQ_API_KEY")
 
 # Initialize FREE LLM (Llama-3-70B or 8B)
 llm = ChatGroq(
