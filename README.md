@@ -1,24 +1,21 @@
 # Knowledge Graph Generator
 
-A Streamlit application that extract graph data (entities and relationships) from text input using LangChain and OpenAI's GPT models, and generates interactive graphs.
-![CleanShot 2025-05-28 at 13 11 46](https://github.com/user-attachments/assets/4fef9158-8dd8-432d-bb8a-b53953a82c6c)
+A Streamlit application that extract graph data (entities and relationships) from text input using LangChain and Groq models, and generates interactive graphs.
 
-👉 This repo is part of my project tutorial on Youtube:
-[![](https://img.youtube.com/vi/O-T_6KOXML4/0.jpg)](https://www.youtube.com/watch?v=O-T_6KOXML4)
 
 ## Features
 
 - Two input methods: text upload (.txt files) or direct text input
 - Interactive knowledge graph visualization
 - Customizable graph display with physics-based layout
-- Entity relationship extraction powered by OpenAI's GPT-4o model
+- Entity relationship extraction powered by Groq models
 
 ## Installation
 
 ### Prerequisites
 
 - Python 3.8 or higher
-- OpenAI API key
+- Groq API key
 
 ### Dependencies
 
@@ -26,7 +23,7 @@ The application requires the following Python packages:
 
 - langchain (>= 0.1.0): Core LLM framework
 - langchain-experimental (>= 0.0.45): Experimental LangChain features
-- langchain-openai (>= 0.1.0): OpenAI integration for LangChain
+- langchain-groq (>= 0.1.0): Groq integration for LangChain
 - python-dotenv (>= 1.0.0): Environment variable support
 - pyvis (>= 0.3.2): Graph visualization
 - streamlit (>= 1.32.0): Web UI framework
